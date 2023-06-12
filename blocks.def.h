@@ -2,7 +2,8 @@
 static const Block blocks[] = {
 	/*Icon*/	/*Command*/		/*Update Interval*/	/*Update Signal*/
 	{"Mem:", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
-
+	{"BAT:", "~/dot.org/.config/i3/scripts/battery1", 30, 0 },
+	{"", "~/dot.org/.config/i3/scripts/temperature", 30, 0 },
 	{"", "date '+%b %d (%a) %I:%M%p'",					5,		0},
 };
 
